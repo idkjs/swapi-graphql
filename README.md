@@ -14,7 +14,7 @@ Uses:
 Try it out at: http://graphql.org/swapi-graphql
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/graphql/swapi-graphql)
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/idkjs/swapi-graphql)
 
 ## Getting Started
 
