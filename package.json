@@ -1,6 +1,6 @@
 {
   "name": "swapi-graphql",
-  "description": "A GraphQL wrapper for swapi.devm",
+  "description": "A GraphQL wrapper for swapi.dev",
   "contributors": [
     "Nicholas Schrock <schrockn@fb.com>",
     "Daniel Schafer <dschafer@fb.com>"
@@ -42,6 +42,7 @@
     "build": "rimraf lib && babel src --ignore __tests__,public --out-dir lib/ && yarn build-lambda",
     "build-lambda": "NODE_ENV=development netlify-lambda build handler",
     "download": "babel-node scripts/download.js cache/data.json",
+
     "serve-public": "babel-node scripts/serve-public",
     "prettier": "prettier --write 'src/**/*.js'",
     "print-schema": "babel-node scripts/print-schema.js",
@@ -66,6 +67,7 @@
     "@babel/plugin-transform-flow-strip-types": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-syntax-async-functions": "6.13.0",
@@ -74,13 +76,12 @@
     "eslint": "^5.16.0",
     "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "flow-bin": "^0.69.0",
+    "flow-bin": "^0.125.1",
     "isomorphic-fetch": "2.2.1",
     "isparta": "^4.1.1",
     "mocha": "^6.1.4",
     "netlify-lambda": "^1.6.3",
     "prettier": "^1.18.2",
-    "sane": "^4.1.0",
-    "@babel/preset-flow": "^7.0.0"
+    "sane": "^4.1.0"
   }
 }
